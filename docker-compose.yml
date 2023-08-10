@@ -1,0 +1,11 @@
+version: '3'
+services:
+  redis:
+    image: redis:latest
+  pretix:
+    image: pretix/standalone
+    ports:
+      - 8080:80
+    depends_on:
+      - redis
+
