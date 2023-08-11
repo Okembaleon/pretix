@@ -182,7 +182,7 @@ PRETIX_OBLIGATORY_2FA = config.getboolean('pretix', 'obligatory_2fa', fallback=F
 PRETIX_SESSION_TIMEOUT_RELATIVE = 3600 * 3
 PRETIX_SESSION_TIMEOUT_ABSOLUTE = 3600 * 12
 
-SITE_URL = config.get('pretix', 'url', fallback='http://46.101.12.244:8080')
+SITE_URL = config.get('pretix', 'url', fallback='http://188.166.171.233')
 if SITE_URL.endswith('/'):
     SITE_URL = SITE_URL[:-1]
 
@@ -206,18 +206,18 @@ FETCH_ECB_RATES = config.getboolean('pretix', 'ecb_rates', fallback=True)
 
 DEFAULT_CURRENCY = config.get('pretix', 'currency', fallback='EUR')
 
-ALLOWED_HOSTS = ['http://46.101.12.244:8080']
+ALLOWED_HOSTS = ['*']
 
 LANGUAGE_CODE = config.get('locale', 'default', fallback='en')
 TIME_ZONE = config.get('locale', 'timezone', fallback='UTC')
 
-MAIL_FROM = SERVER_EMAIL = DEFAULT_FROM_EMAIL = config.get('mail', 'from', fallback='pretix@http://46.101.12.244:8080')
+MAIL_FROM = SERVER_EMAIL = DEFAULT_FROM_EMAIL = config.get('mail', 'from', fallback='pretix@localhost')
 MAIL_FROM_NOTIFICATIONS = config.get('mail', 'from_notifications', fallback=MAIL_FROM)
 MAIL_FROM_ORGANIZERS = config.get('mail', 'from_organizers', fallback=MAIL_FROM)
 MAIL_CUSTOM_SENDER_VERIFICATION_REQUIRED = config.getboolean('mail', 'custom_sender_verification_required', fallback=True)
 MAIL_CUSTOM_SENDER_SPF_STRING = config.get('mail', 'custom_sender_spf_string', fallback='')
 MAIL_CUSTOM_SMTP_ALLOW_PRIVATE_NETWORKS = config.getboolean('mail', 'custom_smtp_allow_private_networks', fallback=DEBUG)
-EMAIL_HOST = config.get('mail', 'host', fallback='http://46.101.12.244:8080')
+EMAIL_HOST = config.get('mail', 'host', fallback='localhost')
 EMAIL_PORT = config.getint('mail', 'port', fallback=25)
 EMAIL_HOST_USER = config.get('mail', 'user', fallback='')
 EMAIL_HOST_PASSWORD = config.get('mail', 'password', fallback='')
