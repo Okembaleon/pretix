@@ -206,7 +206,7 @@ FETCH_ECB_RATES = config.getboolean('pretix', 'ecb_rates', fallback=True)
 
 DEFAULT_CURRENCY = config.get('pretix', 'currency', fallback='EUR')
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['http://46.101.12.244:8080']
 
 LANGUAGE_CODE = config.get('locale', 'default', fallback='en')
 TIME_ZONE = config.get('locale', 'timezone', fallback='UTC')
