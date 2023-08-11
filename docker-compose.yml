@@ -5,7 +5,7 @@ services:
   pretix:
     image: pretix/standalone
     ports:
-      - 8080:80
+      - 8000:8000
     depends_on:
       - redis
 
