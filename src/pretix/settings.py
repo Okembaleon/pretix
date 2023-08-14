@@ -182,7 +182,7 @@ PRETIX_OBLIGATORY_2FA = config.getboolean('pretix', 'obligatory_2fa', fallback=F
 PRETIX_SESSION_TIMEOUT_RELATIVE = 3600 * 3
 PRETIX_SESSION_TIMEOUT_ABSOLUTE = 3600 * 12
 
-SITE_URL = config.get('pretix', 'url', fallback='http://159.65.56.204')
+SITE_URL = config.get('pretix', 'url', fallback='http://159.65.94.245')
 if SITE_URL.endswith('/'):
     SITE_URL = SITE_URL[:-1]
 

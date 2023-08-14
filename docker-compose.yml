@@ -1,11 +1,8 @@
 version: '3'
 services:
-  redis:
-    image: redis:latest
   pretix:
-    image: pretix/standalone
+    image: pretix/standalone:stable
     ports:
-      - 8080:80
-    depends_on:
-      - redis
-
+      - 80:8000  # Map port 8000 in the container to port 80 on the host
+    environment:
+      - SITE_URL=http://159.65.94.245 
