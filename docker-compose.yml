@@ -3,6 +3,6 @@ services:
   pretix:
     image: pretix/standalone:stable
     ports:
-      - 80:8000  # Map port 8000 in the container to port 80 on the host
+      - 8080:80 
     environment:
-      - SITE_URL=http://159.65.94.245 
+      - SITE_URL=http://188.166.151.208:8080
