@@ -1,8 +1,8 @@
 version: '3'
 services:
   pretix:
-    image: pretix/standalone:stable
+    image: okembaleon/pretix_leon:latest
     ports:
       - 8080:80 
     environment:
-      - SITE_URL=http://188.166.151.208:8080
+      - SITE_URL='http://165.232.41.183:8080'
