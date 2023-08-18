@@ -3,6 +3,6 @@ services:
   pretix:
     image: okembaleon/pretix_new:latest
     ports:
-      - 80:80
+      - 8080:80
     environment:
-      - SITE_URL='http://134.122.111.90:80'
+      - SITE_URL='http://134.122.111.90:8080'
