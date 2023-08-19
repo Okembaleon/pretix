@@ -5,4 +5,4 @@ services:
     ports:
       - 8080:80
     environment:
-      - SITE_URL='http://134.122.111.90:8080'
+      - SITE_URL='http://46.101.93.97:8080'
