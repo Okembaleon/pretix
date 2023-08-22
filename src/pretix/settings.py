@@ -50,7 +50,6 @@ from .helpers.config import EnvOrParserConfig
 # Pull in all settings that we also need at wheel require time
 from ._base_settings import *  # NOQA
 
-
 from django.contrib.messages import constants as messages  # NOQA
 from django.utils.translation import gettext_lazy as _  # NOQA
 
@@ -182,7 +181,7 @@ PRETIX_OBLIGATORY_2FA = config.getboolean('pretix', 'obligatory_2fa', fallback=F
 PRETIX_SESSION_TIMEOUT_RELATIVE = 3600 * 3
 PRETIX_SESSION_TIMEOUT_ABSOLUTE = 3600 * 12
 
-SITE_URL =config.get('pretix', 'url', fallback='http://46.101.93.97:8080')
+SITE_URL =config.get('pretix', 'url', fallback='http://188.166.151.175')
 if SITE_URL.endswith('/'):
     SITE_URL = SITE_URL[:-1]
 

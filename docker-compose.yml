@@ -1,8 +1,0 @@
-version: '3'
-services:
-  pretix:
-    image: okembaleon/pretix_new:latest
-    ports:
-      - 8080:80
-    environment:
-      - SITE_URL='http://46.101.93.97:8080'
